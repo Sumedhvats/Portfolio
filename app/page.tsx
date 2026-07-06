@@ -119,7 +119,7 @@ export default function Page() {
                 <SlideInRight delay={0.4}>
                   <div className="mt-4 sm:mt-5 flex flex-wrap items-center gap-1.5 sm:gap-2">
                     <a
-                      href="https://drive.google.com/file/d/1KN6I0ij3GdhF2Bj2KAisUCdzRV9XISTB/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1JT84lJgD7ajBUmqAXlf5koBr8o3xJ4Lb/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="View Resume"
