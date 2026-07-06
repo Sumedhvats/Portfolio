@@ -6,6 +6,7 @@ import {
   Linkedin,
   BookOpen,
   Code2,
+  PhoneCall,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { useState, useEffect } from "react";
@@ -24,6 +25,7 @@ export function Dock() {
     { icon: Github, label: "GitHub", href: "https://github.com/sumedhvats" },
     { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/sumedhvats" },
     { icon: BookOpen, label: "Blog", href: "https://dev.to/sumedhvats" },
+    { icon: PhoneCall, label: "Call", isCal: true },
     { icon: Mail, label: "Email", href: "mailto:sumedhvats2004@gmail.com" },
   ];
   
@@ -54,11 +56,28 @@ export function Dock() {
                 />
                 <span className="sr-only">{item.label}</span>
               </a>
+            ) : item.isCal ? (
+              <button
+                data-cal-namespace="lets-talk"
+                data-cal-link="sumedhvats/lets-talk"
+                data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                className="group relative inline-flex items-center justify-center rounded-full p-1.5 sm:p-2 text-neutral-700 transition-colors duration-200 hover:text-neutral-900 active:scale-90 dark:text-neutral-200 dark:hover:text-white cursor-pointer"
+                style={
+                  !isMobile
+                    ? {
+                        animation: `slideIn 0.4s ease-out ${index * 0.05}s both`,
+                      }
+                    : {}
+                }
+              >
+                {item.icon && <item.icon className="h-3.5 w-3.5 sm:h-4 sm:w-4 pointer-events-none" aria-hidden="true" />}
+                <span className="sr-only">{item.label}</span>
+              </button>
             ) : (
               <a
                 href={item.href}
-                target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                target={item.href?.startsWith("http") ? "_blank" : undefined}
+                rel={item.href?.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="group relative inline-flex items-center justify-center rounded-full p-1.5 sm:p-2 text-neutral-700 transition-colors duration-200 hover:text-neutral-900 active:scale-90 dark:text-neutral-200 dark:hover:text-white"
                 style={
                   !isMobile
@@ -68,7 +87,7 @@ export function Dock() {
                     : {}
                 }
               >
-                <item.icon className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
+                {item.icon && <item.icon className="h-3.5 w-3.5 sm:h-4 sm:w-4 pointer-events-none" aria-hidden="true" />}
                 <span className="sr-only">{item.label}</span>
               </a>
             )}

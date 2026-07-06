@@ -16,6 +16,7 @@ import {
   SlideInLeft,
   SlideInRight,
 } from "@/components/scroll-animation";
+import { CalEmbedButton } from "@/components/cal-embed-button";
 
 export default function Page() {
   return (
@@ -163,8 +164,8 @@ export default function Page() {
                       className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900 whitespace-nowrap"
                     >
                       <BookOpen className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                      
                     </a>
+                    <CalEmbedButton />
                   </div>
                 </SlideInRight>
               </header>
