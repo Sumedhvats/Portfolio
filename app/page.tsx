@@ -79,7 +79,7 @@ export default function Page() {
                 </FadeInText>
                 <SlideInLeft delay={0.2}>
                   <div className="flex items-center gap-3">
-                    <div className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 ring-2 ring-neutral-200 dark:ring-neutral-900 rounded-full overflow-hidden flex-shrink-0">
+                    <div className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 ring-2 ring-neutral-200 dark:ring-neutral-900 rounded-full overflow-hidden flex-shrink-0 transform-gpu isolate">
                       <img
                         src="/profile.png"
                         alt="Sumedh Vats"
