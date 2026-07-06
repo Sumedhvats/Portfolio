@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://sumedh.app/sitemap.xml",
+    sitemap: "https://sumedhvats.vercel.app/sitemap.xml",
   };
 }

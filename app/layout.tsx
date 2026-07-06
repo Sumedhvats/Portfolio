@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sumedh.app",
+    url: "https://sumedhvats.vercel.app",
     siteName: "Sumedh Vats Portfolio",
     title: "Sumedh Vats - Backend & Infra Engineer",
     description:
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     "og:site_name": "Sumedh Vats Portfolio",
     "og:locale": "en_US",
     "og:type": "website",
-    "og:url": "https://sumedh.app",
+    "og:url": "https://sumedhvats.vercel.app",
     "og:title": "Sumedh Vats - Backend & Infra Engineer",
     "og:description":
       "Backend and infra first engineer writing Go and Node. I care about latency, correctness, and systems that scale without drama. I also write CLIs.",

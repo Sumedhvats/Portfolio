@@ -11,7 +11,7 @@ export default function StructuredData() {
       jobTitle: "Backend & Infrastructure Engineer",
       description:
         "Backend and infra first engineer writing Go and Node. I care about latency, correctness, and systems that scale without drama. I also write CLIs.",
-      url: "https://sumedh.app",
+      url: "https://sumedhvats.vercel.app",
       email: "sumedhvats2004@gmail.com",
       nationality: "Indian",
       gender: "Male",
