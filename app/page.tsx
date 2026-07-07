@@ -198,8 +198,8 @@ export default function Page() {
                       image="pastectl.png"
                       links={[
                         {
-                          label: "paste.sumedh.app ↗",
-                          href: "https://paste.sumedh.app",
+                          label: "paste.svats.me ↗",
+                          href: "https://paste.svats.me",
                         },
                         {
                           label: "github ↗",
