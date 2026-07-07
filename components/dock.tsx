@@ -28,7 +28,7 @@ export function Dock() {
     { icon: PhoneCall, label: "Call", isCal: true },
     { icon: Mail, label: "Email", href: "mailto:sumedhvats2004@gmail.com" },
   ];
-  
+
   return (
     <div className="pointer-events-auto fixed inset-x-0 bottom-5 sm:bottom-6 md:bottom-8 z-50 flex justify-center px-2 sm:px-4">
       <nav
@@ -44,8 +44,8 @@ export function Dock() {
                 style={
                   !isMobile
                     ? {
-                        animation: `slideIn 0.4s ease-out ${index * 0.05}s both`,
-                      }
+                      animation: `slideIn 0.4s ease-out ${index * 0.05}s both`,
+                    }
                     : {}
                 }
               >
@@ -65,8 +65,8 @@ export function Dock() {
                 style={
                   !isMobile
                     ? {
-                        animation: `slideIn 0.4s ease-out ${index * 0.05}s both`,
-                      }
+                      animation: `slideIn 0.4s ease-out ${index * 0.05}s both`,
+                    }
                     : {}
                 }
               >
@@ -82,8 +82,8 @@ export function Dock() {
                 style={
                   !isMobile
                     ? {
-                        animation: `slideIn 0.4s ease-out ${index * 0.05}s both`,
-                      }
+                      animation: `slideIn 0.4s ease-out ${index * 0.05}s both`,
+                    }
                     : {}
                 }
               >
@@ -99,7 +99,7 @@ export function Dock() {
         <span className="mx-1 sm:mx-2 h-4 sm:h-5 w-px bg-neutral-200/80 dark:bg-neutral-800/80" aria-hidden />
         <ThemeToggle className="h-7 w-7 sm:h-8 sm:w-8 rounded-full border border-neutral-200/80 bg-white text-neutral-700 shadow-none hover:bg-neutral-100 hover:text-neutral-900 transition-colors active:scale-90 focus-visible:ring-neutral-300 dark:border-neutral-800/80 dark:bg-neutral-950 dark:text-neutral-200 dark:hover:bg-neutral-900 dark:hover:text-white dark:focus-visible:ring-neutral-700" />
       </nav>
-      
+
       <style jsx>{`
         @keyframes slideIn {
           from {

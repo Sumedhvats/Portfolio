@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin, Mail, Calendar, ChevronDown, BookOpen } from "lucide-react";
+import { Github, Linkedin, Mail, Calendar, ChevronDown, BookOpen, ExternalLink } from "lucide-react";
 import { TextShimmer } from "@/components/ui/text-shimmer";
 import { Typewriter } from "@/components/ui/typewriter";
 import { TimeCounter } from "@/components/time-counter";
@@ -90,7 +90,7 @@ export default function Page() {
                     <h1 className="text-lg sm:text-2xl md:text-3xl font-medium tracking-tight text-neutral-900 dark:text-neutral-50">
                       Sumedh Vats
                     </h1>
-                   
+
                   </div>
                 </SlideInLeft>
                 <FadeInText delay={0.3}>
@@ -113,9 +113,9 @@ export default function Page() {
                       />
                       {" from India."}
                     </span>
-                    
+
                   </div>
-                  
+
                 </FadeInText>
                 <SlideInRight delay={0.4}>
                   <div className="mt-4 sm:mt-5 flex flex-wrap items-center gap-1.5 sm:gap-2">
@@ -134,7 +134,7 @@ export default function Page() {
                       className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900 whitespace-nowrap"
                     >
                       <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                      
+
                     </a>
                     <a
                       href="https://github.com/sumedhvats"
@@ -144,7 +144,7 @@ export default function Page() {
                       className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900 whitespace-nowrap"
                     >
                       <Github className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                      
+
                     </a>
                     <a
                       href="https://linkedin.com/in/sumedhvats"
@@ -154,7 +154,7 @@ export default function Page() {
                       className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900 whitespace-nowrap"
                     >
                       <Linkedin className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                      
+
                     </a>
                     <a
                       href="https://dev.to/sumedhvats"
@@ -169,9 +169,9 @@ export default function Page() {
                   </div>
                 </SlideInRight>
               </header>
-              
 
-              
+
+
             </SlideUp>
 
             {/* Bio */}
@@ -219,7 +219,7 @@ export default function Page() {
                       tags={["Go", "Gin", "Next.js", "TypeScript", "PostgreSQL", "WebSocket"]}
                     />
                   </SlideInLeft>
-                  
+
                   <SlideInLeft delay={0.1}>
                     <ProjectListItem
                       title="rate-limiter-go"
@@ -260,7 +260,7 @@ export default function Page() {
                       tags={["Node.js", "React.js", "TypeScript", "Tailwind CSS", "MongoDB"]}
                     />
                   </SlideInLeft>
-                  
+
                 </div>
                 <FadeInText delay={0.2}>
                   <div className="mt-2 sm:mt-3 flex justify-center">
@@ -307,7 +307,7 @@ export default function Page() {
               </section>
             </SlideUp>
 
-               {/* Skills */}
+            {/* Skills */}
             <SlideUp delay={0.3}>
               <section className="mt-3 sm:mt-4 p-2 sm:p-3 md:p-4 section-divider pt-4 sm:pt-5">
                 <SkillsDraggable />
@@ -336,11 +336,36 @@ export default function Page() {
                       description="Achieved a peak LeetCode contest rating of 1,622, placing in the top tier of competitive programmers globally."
                     />
                   </SlideInRight>
-                  <SlideInRight delay={0.15}>
-                    <AchievementCard
-                      title="Top 1% — AMCAT Rating"
-                      description="Secured an AMCAT rating in the top 1% among a university cohort of 4,500+ students."
-                    />
+                </div>
+
+                <div className="mt-3 sm:mt-4 flex flex-wrap gap-2">
+                  <SlideInLeft delay={0.2}>
+                    <a
+                      href="https://leetcode.com/u/sumedhvats2004/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-3 py-1.5 text-[10px] sm:text-xs font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-900 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-200"
+                    >
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5" aria-hidden="true">
+                        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                      </svg>
+                      LeetCode Profile
+                      <ExternalLink className="h-3 w-3 opacity-50" />
+                    </a>
+                  </SlideInLeft>
+                  <SlideInRight delay={0.25}>
+                    <a
+                      href="https://codolio.com/profile/SumedhVats"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-3 py-1.5 text-[10px] sm:text-xs font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-900 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-200"
+                    >
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5" aria-hidden="true">
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+                      </svg>
+                      Codolio Profile
+                      <ExternalLink className="h-3 w-3 opacity-50" />
+                    </a>
                   </SlideInRight>
                 </div>
               </section>
@@ -435,7 +460,7 @@ export default function Page() {
                     Still reading? That means something clicked. <br />Let's talk.
                   </h2>
                   <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-300">
-                    
+
                   </p>
                 </FadeInText>
 
@@ -484,15 +509,15 @@ export default function Page() {
           </div>
         </article>
         <div className="mt-6 sm:mt-8 flex justify-center rounded-lg sm:rounded-xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-950 text-xs sm:text-xs text-neutral-500 dark:text-neutral-400 p-2 sm:p-2 md:p-3 mx-0">
-          
-            <span className="italic text-center leading-5 sm:leading-6">The people who are crazy enough to think they can change the world are <br /> the ones who do</span> <span aria-hidden> </span>
-          
+
+          <span className="italic text-center leading-5 sm:leading-6">The people who are crazy enough to think they can change the world are <br /> the ones who do</span> <span aria-hidden> </span>
+
         </div>{" "}
         <div className="mt-2 sm:mt-3 md:mt-4 flex justify-center text-xs text-neutral-500 dark:text-neutral-400 px-2">
-           
-      designed and developed by&nbsp;<a href="https://github.com/sumedhvats" className="text-blue-400 hover:text-blue-500">~Sumedh</a>
-      </div>
-        
+
+          designed and developed by&nbsp;<a href="https://github.com/sumedhvats" className="text-blue-400 hover:text-blue-500">~Sumedh</a>
+        </div>
+
       </div>
 
       {/* Floating Dock */}
