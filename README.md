@@ -2,7 +2,7 @@
 
 My personal portfolio — built with Next.js, Tailwind CSS, and Framer Motion.
 
-**[sumedhvats.vercel.app](https://sumedhvats.vercel.app)**
+**[svats.me](https://svats.me)**
 
 ## Stack
 
