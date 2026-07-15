@@ -325,8 +325,8 @@ export default function Page() {
                 <div className="grid gap-2 sm:gap-2.5 md:gap-3">
                   <SlideInLeft delay={0.1}>
                     <AchievementCard
-                      title="750+ DSA Problems Solved"
-                      description="Solved 750+ algorithmic and data structure problems across LeetCode, GeeksforGeeks, and Codeforces, with strong focus on dynamic programming, graphs, greedy algorithms, and problem-solving under constraints."
+                      title="800+ DSA Problems Solved"
+                      description="Solved 800+ algorithmic and data structure problems across LeetCode, GeeksforGeeks, and Codeforces, with strong focus on dynamic programming, graphs, greedy algorithms, and problem-solving under constraints."
                     />
                   </SlideInLeft>
 
