@@ -50,7 +50,7 @@ export function Dock() {
                 }
               >
                 <img
-                  src="/profile.png"
+                  src="/profile.webp"
                   alt={item.label}
                   className="h-6 w-6 sm:h-7 sm:w-7 rounded-full object-cover"
                 />

@@ -23,9 +23,9 @@ export function AchievementCard({
 
         {/* title and date on same line */}
         <div className="flex items-start justify-between gap-2 mb-1.5 sm:mb-2">
-          <h4 className="text-xs sm:text-sm font-semibold text-neutral-900 dark:text-neutral-100 tracking-tight group-hover:text-black dark:group-hover:text-white transition-colors leading-snug flex-1">
+          <h3 className="text-xs sm:text-sm font-semibold text-neutral-900 dark:text-neutral-100 tracking-tight group-hover:text-black dark:group-hover:text-white transition-colors leading-snug flex-1">
             {title}
-          </h4>
+          </h3>
           <span className="inline-flex rounded-full bg-black/15 dark:bg-white/10 px-2 sm:px-2.5 py-0.5 text-[8px] sm:text-[9px] font-medium text-black/80 dark:text-white/70 border border-black/40 dark:border-white/20 whitespace-nowrap flex-shrink-0">
             {date}
           </span>
@@ -66,9 +66,9 @@ export function AchievementItem({
       )}
     >
       <div className="flex items-start justify-between gap-2">
-        <h4 className="text-xs sm:text-sm font-semibold text-neutral-900 dark:text-neutral-50 flex-1 min-w-0">
+        <h3 className="text-xs sm:text-sm font-semibold text-neutral-900 dark:text-neutral-50 flex-1 min-w-0">
           {title}
-        </h4>
+        </h3>
         <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
           <span className="text-xs rounded-sm border border-neutral-200 px-1 py-0.25 text-neutral-600 dark:border-neutral-800 dark:text-neutral-300 whitespace-nowrap">
             {date}

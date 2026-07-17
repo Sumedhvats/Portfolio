@@ -82,8 +82,9 @@ export default function Page() {
                   <div className="flex items-center gap-3">
                     <div className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 ring-2 ring-neutral-200 dark:ring-neutral-900 rounded-full overflow-hidden flex-shrink-0 transform-gpu isolate">
                       <img
-                        src="/profile.png"
+                        src="/profile.webp"
                         alt="Sumedh Vats"
+                        fetchPriority="high"
                         className="h-full w-full object-cover"
                       />
                     </div>
@@ -187,15 +188,16 @@ export default function Page() {
             <SlideUp delay={0.2}>
               <section id="projects" className="mt-3 sm:mt-4 p-2 sm:p-3 md:p-4 section-divider pt-4 sm:pt-5">
                 <FadeInText delay={0.1}>
-                  <h3 className="font-bricolage text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-50 mb-2 sm:mb-3 ml-0.5 sm:ml-1">
+                  <h2 className="font-bricolage text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-50 mb-2 sm:mb-3 ml-0.5 sm:ml-1">
                     Projects
-                  </h3>
+                  </h2>
                 </FadeInText>
                 <div className="space-y-1.5 sm:space-y-2 md:space-y-2">
                   <SlideInLeft delay={0.1}>
                     <ProjectListItem
                       title="pasteCTL"
-                      image="pastectl.png"
+                      image="pastectl.webp"
+                      priority={true}
                       links={[
                         {
                           label: "paste.svats.me ↗",
@@ -245,7 +247,7 @@ export default function Page() {
                   <SlideInLeft delay={0.1}>
                     <ProjectListItem
                       title="Brainly"
-                      image="secondbrain.png"
+                      image="secondbrain.webp"
                       links={[
                         {
                           label: "github ↗",
@@ -279,9 +281,9 @@ export default function Page() {
             <SlideUp delay={0.2}>
               <section id="open-source" className="mt-3 sm:mt-4 p-2 sm:p-3 md:p-3 section-divider pt-4 sm:pt-5">
                 <FadeInText delay={0.1}>
-                  <h3 className="font-bricolage text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-50 mb-2 sm:mb-3 ml-0.5 sm:ml-1">
+                  <h2 className="font-bricolage text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-50 mb-2 sm:mb-3 ml-0.5 sm:ml-1">
                     Open Source
-                  </h3>
+                  </h2>
                 </FadeInText>
                 <div className="space-y-1.5 sm:space-y-2 md:space-y-2">
                   <SlideInLeft delay={0.1}>
@@ -317,9 +319,9 @@ export default function Page() {
             <SlideUp delay={0.3}>
               <section id="achievements" className="mt-3 sm:mt-4 p-2 sm:p-3 md:p-3 section-divider pt-3 sm:pt-4 md:pt-5">
                 <FadeInText delay={0.1}>
-                  <h3 className="font-bricolage mb-3 sm:mb-4 text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-100 ml-0.5 sm:ml-1 md:ml-1">
+                  <h2 className="font-bricolage mb-3 sm:mb-4 text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-100 ml-0.5 sm:ml-1 md:ml-1">
                     Achievements
-                  </h3>
+                  </h2>
                 </FadeInText>
 
                 <div className="grid gap-2 sm:gap-2.5 md:gap-3">
@@ -375,15 +377,15 @@ export default function Page() {
             <SlideUp delay={0.2}>
               <section className="mt-3 sm:mt-4 p-2 sm:p-3 md:p-3 section-divider pt-4 sm:pt-5">
                 <FadeInText delay={0.1}>
-                  <h3 className="font-bricolage text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-50 mb-2 sm:mb-3 ml-0.5 sm:ml-1 md:ml-1">
+                  <h2 className="font-bricolage text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-50 mb-2 sm:mb-3 ml-0.5 sm:ml-1 md:ml-1">
                     Blogs
-                  </h3>
+                  </h2>
                 </FadeInText>
                 <div className="space-y-1.5 sm:space-y-2 md:space-y-2">
                   <SlideInLeft delay={0.1}>
                     <ProjectListItem
                       title="Building pasteCTL — a real-time code sharing platform"
-                      image="blog.png"
+                      image="blog.webp"
                       headerLayout="vertical"
                       links={[
                         {
@@ -422,29 +424,29 @@ export default function Page() {
             <SlideUp delay={0.3}>
               <section className="mt-3 sm:mt-4 p-2 sm:p-3 md:p-3 section-divider pt-4 sm:pt-5">
                 <FadeInText delay={0.1}>
-                  <h3 className="font-bricolage text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-50 mb-2 sm:mb-3">
+                  <h2 className="font-bricolage text-xs sm:text-sm md:text-base font-semibold tracking-[0.05em] text-neutral-900 dark:text-neutral-50 mb-2 sm:mb-3">
                     Education
-                  </h3>
+                  </h2>
                 </FadeInText>
                 <ul className="space-y-1.5 sm:space-y-2 md:space-y-2">
-                  <SlideInLeft delay={0.1}>
-                    <li>
+                  <li>
+                    <SlideInLeft delay={0.1}>
                       <AchievementItem
                         title="Chandigarh University"
                         date="2023 – Present"
                         description="B.E. in Computer Science Engineering — CGPA: 8.56 | Mohali, India"
                       />
-                    </li>
-                  </SlideInLeft>
-                  <SlideInRight delay={0.15}>
-                    <li>
+                    </SlideInLeft>
+                  </li>
+                  <li>
+                    <SlideInRight delay={0.15}>
                       <AchievementItem
                         title="Vikas Bharati Public School"
                         date="2022"
                         description="Higher Secondary — 82% | Delhi, India"
                       />
-                    </li>
-                  </SlideInRight>
+                    </SlideInRight>
+                  </li>
                 </ul>
               </section>
             </SlideUp>

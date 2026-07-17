@@ -31,7 +31,7 @@ export function NekoCat() {
       `
 
       const img = document.createElement("img")
-      img.src = "/profile.png"
+      img.src = "/profile.webp"
       img.alt = "Profile"
       img.style.cssText = `
         width: 40px;

@@ -11,6 +11,7 @@ type ProjectListItemProps = {
   video?: string;
   className?: string;
   headerLayout?: "horizontal" | "vertical";
+  priority?: boolean;
 };
 
 export function ProjectListItem({
@@ -22,6 +23,7 @@ export function ProjectListItem({
   video,
   className,
   headerLayout = "horizontal",
+  priority = false,
 }: ProjectListItemProps) {
   const hasBullets = bullets.length > 0
   const hasTags = tags.length > 0
@@ -51,6 +53,8 @@ export function ProjectListItem({
             src={image}
             alt={title}
             fill
+            sizes="(max-width: 768px) 100vw, 576px"
+            priority={priority}
             className="object-cover"
           />
         </div>
@@ -58,9 +62,9 @@ export function ProjectListItem({
       
       <div className="px-3 py-2 sm:px-4 sm:py-3 md:px-5 md:py-4">
         <header className={headerLayout === "vertical" ? "space-y-2" : "flex items-start justify-between gap-2 mb-2 sm:mb-2.5"}>
-          <h4 className="text-xs sm:text-sm md:text-base font-semibold text-neutral-900 dark:text-neutral-50">
+          <h3 className="text-xs sm:text-sm md:text-base font-semibold text-neutral-900 dark:text-neutral-50">
             {title}
-          </h4>
+          </h3>
           {hasLinks ? (
             <div className={headerLayout === "vertical" ? "flex flex-wrap gap-1 sm:gap-1.5 items-center" : "flex flex-wrap gap-1 sm:gap-1.5 items-center justify-end flex-shrink-0"}>
               {links.map((l, idx) => (
