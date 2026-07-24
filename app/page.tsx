@@ -351,15 +351,15 @@ export default function Page() {
                 <div className="grid gap-2 sm:gap-2.5 md:gap-3">
                   <SlideInLeft delay={0.1}>
                     <AchievementCard
-                      title="800+ DSA Problems Solved"
-                      description="Solved 800+ algorithmic and data structure problems across LeetCode, GeeksforGeeks, and Codeforces, with strong focus on dynamic programming, graphs, greedy algorithms, and problem-solving under constraints."
+                      title="850+ DSA Problems Solved"
+                      description="Solved 850+ algorithmic and data structure problems across LeetCode, GeeksforGeeks, and Codeforces, with strong focus on dynamic programming, graphs, greedy algorithms, and problem-solving under constraints."
                     />
                   </SlideInLeft>
 
                   <SlideInRight delay={0.15}>
                     <AchievementCard
-                      title="LeetCode Contest Rating — 1,622"
-                      description="Achieved a peak LeetCode contest rating of 1,622, placing in the top tier of competitive programmers globally."
+                      title="LeetCode Contest Rating — 1,649"
+                      description="Achieved a peak LeetCode contest rating of 1,649, placing in the top tier of competitive programmers globally."
                     />
                   </SlideInRight>
                 </div>
