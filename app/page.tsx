@@ -246,6 +246,30 @@ export default function Page() {
 
                   <SlideInLeft delay={0.1}>
                     <ProjectListItem
+                      title="ReelSlider"
+                      image="reelslider.webp"
+                      links={[
+                        {
+                          label: "Chrome Store ↗",
+                          href: "https://chromewebstore.google.com/detail/reelslider-%E2%80%94-instagram-vi/lganmccldjdmfolkijopflmepainfloc",
+                        },
+                        {
+                          label: "github ↗",
+                          href: "https://github.com/Sumedhvats/reelSlider",
+                        },
+                      ]}
+                      bullets={[
+                        "Manifest V3 Chrome extension that injects real video controls into Instagram — seek, volume, and playback speed (0.25×–2.0×) for Reels, Stories, Feed, and Posts.",
+                        "Prototype-locks HTMLMediaElement.prototype.muted to prevent Instagram from overriding the user's audio preference; syncs mute, volume, and speed via localStorage and chrome.storage.local across sessions.",
+                        "Background service worker handles preference injection into new tabs via chrome.scripting.executeScript, syncing popup changes to all open Instagram tabs in real time.",
+                        "Keyboard shortcuts (A/S/D seek, M mute, F fullscreen) and loop section controls ([ / ] keys) for power users — all running entirely in the browser with zero external network requests.",
+                      ]}
+                      tags={["JavaScript", "Chrome Extension", "Manifest V3", "TypeScript"]}
+                    />
+                  </SlideInLeft>
+
+                  <SlideInLeft delay={0.1}>
+                    <ProjectListItem
                       title="Brainly"
                       image="secondbrain.webp"
                       links={[
